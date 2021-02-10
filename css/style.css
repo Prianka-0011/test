@@ -1,0 +1,243 @@
+/**************common element start*************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  a{
+      text-decoration: none!important;
+  }
+  a:hover{
+      text-decoration: none!important;
+  }
+  .padding-0{
+    padding: right 0 !important;
+    padding-left:0!important;
+}
+.padding-1{
+    padding: right 0 !important;
+}
+.heading1 h1{
+  font-size: 2rem!important;
+  font-weight: bold!important;
+}
+.heading1{
+  padding: 50px 0;
+}
+
+
+  /**************common element end*************/
+  /**************header element start*************/
+.header .logo{
+height: 40px;
+width: 100px;
+}
+.container-fluid {
+    margin: 0 15px 0 35px!important;
+}
+.custom-nav{
+padding: 20px 0!important;
+}
+.header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .header .container {
+    position: relative;
+    z-index: 2;
+  }
+  .heading{
+      margin-top: 100px;
+      font-size: 4rem;
+      color: #fff;
+  }
+  .mddle{
+      color: #e9731f!important;
+  }
+  .last{
+      font-weight: 700!important;
+  }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  @media (pointer: coarse) and (hover: none) {
+    .header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    .header video {
+      display: none;
+    }
+  }
+  .cente-bottom{
+    background-color: rgba(255, 255, 255, 0.5);
+      padding: 15px 8px 15px 8px;
+      
+  }
+  #cente-bottom{
+      top: 42%;
+      bottom: 50%;
+      translate: (-50% -42%);
+  }
+.cente-bottom .src{
+width: 100%;
+height: 40px;
+border: none;
+border-radius: 0%;
+padding: 0 14px;
+font-size: .9rem;
+color: #808080;
+ }
+
+  .cente-bottom .typ{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 0%;
+    color: #808080;
+    padding: 0 14px;
+    font-size: .9rem;
+ }
+ .searchprop{
+     background:#e9731f!important ;
+     width: 100%;
+     height: 50px;
+     border-radius: 0%;
+     border: none;
+     color: #fff;
+ }
+ .searchprop:hover{
+    background:hsl(0, 0%, 3%)!important ;
+ }
+ .tab {
+  overflow: hidden;
+ 
+}
+.tab button {
+  background-color: #e9731f;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 24px;
+  transition: 0.3s;
+  color: #fff;
+  font-size: .9rem;
+}
+
+.active {
+  background-color: hsl(0, 0%, 3%)!important ;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0%;
+}
+
+/**************nav bar style satrt *************/
+nav{
+  padding: 10px 50px;
+}
+.nav-link{
+  position: relative;
+  color: #fff;
+  padding: 0 10px!important;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.nav-link:hover{
+  
+  color: #e9731f;
+}
+.nav-link:hover::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color:#e9731f;;
+}
+/**************hoverdropdown  start *************/
+.dropdown{
+  position: relative;
+  display: flex;
+  float: left;
+}
+.dropdown-menu{
+ 
+  display: none;
+  position: absolute;
+  background-color: rgb(54, 53, 53)!important;
+  width: 250px!important;
+  padding: 20px 0;
+  border-radius: 0%!important;
+  border: none!important;
+  min-width: 158px;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  transition: .9;
+}
+.dropdown-menu a{
+ display: block;
+ color: #fff;
+ text-align: center;
+ padding: 12px!important;
+}
+.dropdown-menu a:hover{
+background-color: #2F4F4F;
+color:#fff;
+}
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+/**************hoverdropdown end *************/
+/* .nav-link:hover::after{
+  transform: scaleX(1);
+} */
+/**************nav bar style end *************/
+
+/**************nav bar style change after scrolling start*************/
+.scrolling-active{
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+  padding: 8px 30px;
+  height: 80px;
+  transition: 0.9s;
+  
+}
+/**************nav bar style change after scrolling end*************/
+/**************header element end*************/
+/**************section1 element start*************/
+.section1{
+  height: 100vh;
+  width:100%;
+}
+
+/**************section1 element end*************/
