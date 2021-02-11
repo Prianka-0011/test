@@ -171,7 +171,7 @@ nav{
 }
 .nav-link:hover{
   
-  color: #e9731f;
+  color: #fc842e;
 }
 .nav-link:hover::after{
   content: '';
@@ -180,7 +180,7 @@ nav{
   position: absolute;
   left: 0;
   bottom: -3px;
-  background-color:#e9731f;;
+  background-color:#fc842e;;
 }
 /**************hoverdropdown  start *************/
 .dropdown{
@@ -239,5 +239,142 @@ color:#fff;
   height: 100vh;
   width:100%;
 }
+.box{
+  height: auto;
+  width: 100%;
+  
+  box-sizing: border-box;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+  transition: .5s;
+}
+.box:hover{
+  transform: translateY(-20px);
+}
+.carousel img{
+  height: 210px!important;
+  width: 100%;
+}
+.carousel-inner .cursol-img-btn{
+display:flex;
+border: none;
+border-radius: 2px;
+width:85%;
+height:35px;
+position: absolute;
+padding: 8px 0 0 8px!important;
+top: 79%;
+left: 50%;
+text-align: center;
+padding: 10px 0;
+transform: translate(-50%, -0%);
+background-color:rgba(0,0,0,.5);
+font-size: .8rem;
+color: #fff;
 
+}
+.carousel-inner .cursol-img-btn i{
+padding: 3px 7px 3px 0;
+}
+ .cursol-img-span1{
+  padding: 0 3px 0 0!important;
+  font-weight: 500;
+  color: #fff;
+}
+.cursol-img-span2{
+ color: #fff;
+  font-weight: 500;
+}
+.cursol-img-span1:hover{
+ color:#fc842e ;
+}
+.cursol-img-span2:hover{
+  color:#fc842e ;
+ }
+.body-desc{
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.bodypart{
+  margin-bottom: 10px;
+}
+.body-desc .bodypart .dec-link{
+color: rgb(10, 10, 10);
+font-size: 18px;
+transition: 0.4s;
+}
+.body-desc .bodypart .dec-link:hover{
+  color:#fc842e ;
+  }
+  .bodypart h2{
+    font-size: 18px;
+    color:#fc842e ;
+    padding-top: 8px;
+    padding-bottom: 4px;
+
+  }
+  .m-icon span i{
+    
+    padding-right: 2px;
+    color: rgb(121, 116, 116);
+    
+    
+  }
+  span{
+    padding:0 12px 4px 12px;
+    color: rgb(121, 116, 116);
+    
+  }
+  .span1{
+    padding:0 12px 6px 0;
+  }
+  .m-icon span .start-icon
+  {
+    padding-right: 2px;
+    font-weight: 100;
+  }
+.bodypart::after
+{
+  content: '';
+  width: 82%;
+  position: absolute;
+  height: 1px;
+  background-color:rgb(224, 216, 216);
+}
+.footer{
+  margin: 10px;
+}
+
+.cardfooter img{
+ padding-right: 12px;
+ padding-top: 3px;
+ padding-bottom: 4px;
+}
+.cardfooter a{
+  color: rgb(20, 19, 19);
+  font-size: .8rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.cardfooter a:hover{
+  color:#fc842e 
+}
+.share{
+  border: 1px solid rgb(224, 216, 216);
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: #808080;
+  margin-left: 25%;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+.fav{
+  border: 1px solid rgb(224, 216, 216);
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: #808080;
+  margin-left: 0%;
+  margin-top: 5px;
+}
 /**************section1 element end*************/
