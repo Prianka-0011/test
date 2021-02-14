@@ -5,8 +5,29 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
   }
+  .margin{
+    margin-bottom: 100px!important;
+  }
   a{
       text-decoration: none!important;
+  }
+  .view-more{
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transform: translateY(60px);
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+    margin-top: -10px;
+  }
+  .view-more:hover{
+
+    background-color: #e9731f;
+    color: #fff;
+
+
   }
   a:hover{
       text-decoration: none!important;
@@ -75,6 +96,7 @@ padding: 20px 0!important;
   }
   .last{
       font-weight: 700!important;
+      color: #fff;
   }
   header .overlay {
     position: absolute;
@@ -180,7 +202,7 @@ nav{
   position: absolute;
   left: 0;
   bottom: -3px;
-  background-color:#fc842e;;
+  background-color:#fc842e;
 }
 /**************hoverdropdown  start *************/
 .dropdown{
@@ -236,20 +258,23 @@ color:#fff;
 /**************header element end*************/
 /**************section1 element start*************/
 .section1{
-  height: 100vh;
+  height: auto;
   width:100%;
+  overflow: hidden;
 }
 .box{
   height: auto;
   width: 100%;
-  
+  margin-bottom: 18px;
   box-sizing: border-box;
-  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-  transition: .5s;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.2);
+  
 }
-.box:hover{
-  transform: translateY(-20px);
-}
+
+/* .parent:hover{
+  transform: translateY(-12px);
+  transition: transform .2s;
+} */
 .carousel img{
   height: 210px!important;
   width: 100%;
@@ -259,7 +284,7 @@ display:flex;
 border: none;
 border-radius: 2px;
 width:85%;
-height:35px;
+height:auto;
 position: absolute;
 padding: 8px 0 0 8px!important;
 top: 79%;
@@ -300,11 +325,8 @@ padding: 3px 7px 3px 0;
 .body-desc .bodypart .dec-link{
 color: rgb(10, 10, 10);
 font-size: 18px;
-transition: 0.4s;
 }
-.body-desc .bodypart .dec-link:hover{
-  color:#fc842e ;
-  }
+
   .bodypart h2{
     font-size: 18px;
     color:#fc842e ;
@@ -355,9 +377,7 @@ transition: 0.4s;
   font-weight: 600;
   padding-top: 10px;
 }
-.cardfooter a:hover{
-  color:#fc842e 
-}
+
 .share{
   border: 1px solid rgb(224, 216, 216);
   height: 30px;
@@ -377,4 +397,218 @@ transition: 0.4s;
   margin-left: 0%;
   margin-top: 5px;
 }
+.cardfooter a:hover{
+  color:#fc842e 
+}
+.body-desc .bodypart .dec-link:hover{
+  color:#fc842e ;
+  }
+.parent:hover {
+  transform: translateY(-12px);
+  
+}
+.carousel-item{
+overflow: hidden;
+}
+.carousel-item img{
+  transition: transform .9s ease;
+}
+.parent:hover .carousel-item img {
+  -ms-transform: scale(1.2); /* IE 9 */
+   -webkit-transform: scale(1.2); 
+  transform: scale(1.2);
+  /* transition-duration: .9s; */
+}
+.parent{
+  transition: transform .9s ease;
+}
+.heading1 .feacture{
+  font-weight: 500!important;
+  font-size: 28px!important;
+  letter-spacing: 2px!important;
+}
 /**************section1 element end*************/
+/**************section2 element end*************/
+.section2{
+  height: auto;
+  width:100%;
+  overflow: hidden;
+}
+.card-div-body h2{
+font-size: 20px;
+padding: 18px 0 0 0;
+}
+.dev-card .card-div-body p{
+  font-size: 14px;
+  color: rgb(121, 116, 116);
+  margin-bottom:  20px!important;
+}
+.feacture{
+  margin-top: 30px;
+  margin-bottom: -18px;
+}
+.dev-card{
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.5);
+}
+.dev-card-header img{
+width: 100%;
+height: 350px;
+}
+.card-div-body {
+  padding-bottom: 10px;
+}
+.card-div-body p{
+  padding-top: 5px;;
+}
+/**************section2 element end*************/
+/**************section3 element end*************/
+.section3{
+  height: auto;
+  width:100%;
+  background-color: #cfcfd4;
+  position: relative;
+  overflow: hidden;
+}
+.manage h1{
+  font-size: 28px;
+  letter-spacing: 9px;
+  margin-top: 100px;
+  text-align: center;
+}
+.manage-part{
+  box-sizing: border-box;
+  padding: 50px 0 50px 0;
+}
+.middle p{
+  color: #4b4545;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  padding-top: 5px;
+}
+.metting{
+  padding: 0%!important;
+  margin: 0%!important;
+}
+.metting img{
+height: 100%;
+width: 100%;
+
+
+}
+.read{
+  padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+    margin-bottom: 50px;
+    
+}
+.read:hover{
+background-color: #fc842e;
+color: #fff;
+}
+.metting::before{
+  content: "";
+  position: absolute;
+  top:0%;
+  bottom: 0%;
+  left:0;
+  right: 0;
+  opacity: .3;
+  background: #000;
+}
+/* .metting::before{
+  content: '';
+  top:0%;
+  bottom: 0%;
+  position: absolute;    
+  width: 4px;
+  background-color: red;
+  left: 0;
+  right: 0;
+  margin-left: -1.5px;
+  height: 100px;
+} */
+
+/**************section3 element end*************/
+/**************section4 element end*************/
+.section4{
+  width: 100%;
+  height: auto;
+  
+}
+.Channel img{
+height: 100px;
+width: 160px;
+padding: 0 15px 0 15px;
+}
+.Channel{
+  padding-right: 70px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+.heading1 .cha{
+   color: rgb(14, 13, 13);
+   font-weight: 500!important;
+   font-size: 18px;
+}
+.section4::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color:#000;;
+}
+/**************section4 element end*************/
+/**************section5 element start*************/
+.section5{
+  height: auto;
+  width: 100%;
+}
+.section5 h3{
+  font-size: 19px!important;
+  font-weight: 700!important;
+  color: #000;
+}
+.section5 p{
+  font-size: 13px;
+  color: #999;
+  line-height: 20px;
+  /* letter-spacing: 50px; */
+  padding-top: 30px;
+}
+.footer-body{
+  padding: 100px;
+}
+.section5 ul{
+  list-style-type: none;
+}
+.footer-body2 li::before {
+  content: ">";
+  font-size: 15px;
+  color: #999;
+  padding-right: 10px;
+}
+.footer-body2{
+  padding-top: 30px;
+}
+.section5 .footer-body2 a{
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+.section5 .footer-body3 p{
+  font-size: 14px;
+  font-weight: 300;
+}
+.section5 .footer-body3 
+/**************section4 element end*************/

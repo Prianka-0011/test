@@ -19,3 +19,4 @@ $(window).on('scroll',function(){
    
    });
 //nav bar scrolling end
+//mouse hover image zoom end
