@@ -18,5 +18,38 @@ $(window).on('scroll',function(){
   }
    
    });
-//nav bar scrolling end
-//mouse hover image zoom end
+//end
+var mybutton = document.getElementById("scroll-top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+//   document.documentElement.animate= 1000;
+// }
+$('#topFunction').click(function() {
+  $("html, body").animate({
+  scrollTop: 0
+  }, 1000);
+  return false;
+  });
+
+  $(function() {
+     
+      $('.dropdown').has('.dropdown-menu')
+      .mouseover(function(){
+        $(this).children('.dropdown-menu').css('visibility','visible');
+      })
+      .mouseout(function(){
+        $(this).children('.dropdown-menu').css('visibility','hidden');
+      })
+    
+  });
