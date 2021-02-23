@@ -53,3 +53,5 @@ $('#topFunction').click(function() {
       })
     
   });
+  //image carsoul auto play
+  $('.carousel').carousel()
