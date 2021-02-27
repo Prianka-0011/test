@@ -350,6 +350,7 @@ background-color: #050707;
   height: auto;
   transition: 0.9s;
   
+  
 }
 /**************nav bar style change after scrolling end*************/
 /**************header element end*************/
@@ -751,6 +752,20 @@ float: left;
 .footer-p{
   padding: 20px 0 0 0!important;
 }
+@-webkit-keyframes slideLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateX(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
  .visibleafterscroll{
   list-style-type: none;
   margin: 0;
@@ -762,6 +777,12 @@ float: left;
   z-index: 99;
   display: none;
   transition: all .9s;
+}
+.scrollingtop-active{
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: slideLeft;
+  animation-name: slideLeft;
 }
 .visibleafterscroll li {
   float: left;
@@ -959,17 +980,12 @@ width: 100%;
   -webkit-animation-duration: 0.6s;
   background-color: rgba(26, 25, 25,.4)!important;
 }
-/* .carousel:hover .carousel-control-next{
-transform: translateX(-20px);
-}
-.carousel:hover .carousel-control-prev{
-  transform: translateX(20px);
-} */
+
 /**************ongoing project page element end*************/
 /**************blog page element start*************/
 .blog-section1{
 height: auto;
-padding: 40px;
+padding: 60px 0 70px 0!important;
 width: 100%;
 overflow: hidden;
 }
@@ -1011,17 +1027,273 @@ overflow: hidden;
   letter-spacing: 6px;
 }
 
-
-.blog-box{
-  height: 350px;
-  width: 100%;
-  margin-bottom: 18px;
-  overflow: hidden;
-  box-sizing: border-box;
-  box-shadow: 0 3px 1rem rgba(0,0,0,.2);
-}
 .blog-card-body{
   padding: 20px 30px 0 22px!important;
   box-sizing: border-box!important;
 }
+.blog-footer-btn{
+  padding: 20px 0 10px 0!important;
+  box-sizing: border-box;
+}
+.blog-footer-btn a{
+  color: #f75b1d;
+  font-size: 15px;
+  font-weight: 500;
+}
+.blog-footer-btn a:hover{
+  color: #f75b1d;
+}
+.blog-card-body a{
+font-size: 16px;
+color: #050707;
+font-weight: 500;
+}
+.blog-card-body a:hover{
+  color: #f75b1d;
+}
+.blog-card-body p{
+  font-size: 12px;
+  color: #5a5252;
+  padding:  4px 0!important;
+}
+
+.blog-carousel-item img{
+  height: 170px!important;
+}
 /**************blog page element end*************/
+/**************aboutus page element end*************/
+/* .ongoin-footer{
+margin-top: -100px!important;
+} */
+/**************abousus page element end*************/
+
+.aboutus-header{
+  position: relative;
+  background-image: url(/images/about-banner.jpg);
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  padding: 0%!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutheading h1{
+  font-size: 65px!important;
+  font-weight: 900!important;
+  letter-spacing: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+ .aboutimg{
+width: 100%;
+overflow: hidden;
+height: auto;
+margin: 20px 0;
+}
+.aboutimg img{
+  width: 100%;
+overflow: hidden;
+height: 270px;
+}
+
+.about-fluid{
+padding: 0 20px;
+box-sizing: border-box;
+}
+.aboutsection5{
+  padding-top: 60px;
+}
+/**************abousus page element end*************/
+/**************expo page element end*************/
+.expo-section{
+  
+  overflow: hidden;
+}
+.expo-fluid{
+  padding: 30px 0 50px 0;
+}
+.expo-img img{
+height: 240px;
+width: 100%;
+overflow: hidden;
+}
+.expo-para p{
+font-size: 14px;
+color: #808080;
+padding: 35px 0 40px 0;
+text-align: left;
+}
+.expo-img2{
+  overflow: hidden;
+}
+.expo-img2 img{
+height: 240px;
+width: 100%;
+overflow: hidden;
+}
+/* .expo-section::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color:#000;;
+} */
+/**************expo page element end*************/
+/**************desce page element end*************/
+.desc-section{
+  position: relative;
+  background-image: url(/images/adout-desc.jpg);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0%!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.desc-section-fluid{
+padding: 150px 10px!important;
+}
+.desc-p p{
+  color: #fff;
+
+}
+.desc-p::after{
+  content: '';
+  width: 30%;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transform: translateX(15px);
+  background-color:#f75b1d;
+}
+.desc-section::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color:#000;;
+} 
+/**************desce page element end*************/
+/**************weare page element end*************/
+.weare{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 70px 0 60px 0;
+}
+.wearede1 h1{
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+.wearede1 p{
+  font-size: 14px;
+  line-height: 21px;
+  color:#808080 ;
+}
+ .btn-1{
+  width: 300px;
+  height: 70px;
+  border: none;
+  margin-top: 50px;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  transition: ease-out 0.3s;
+  font-size: 18px;
+  outline: none;
+}
+.btn-1:hover{
+  cursor: pointer;
+  box-shadow: inset 300px 0 0 0 #f75b1d;
+} 
+/**************weare page element end*************/
+/**************meeting page element end*************/
+.meeting{
+  position: relative;
+  background-image: url(/images/mettingdark.jpg);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.metting-heading h1{
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 10px!important;
+margin-bottom: -3px!important;
+}
+.metting-heading h2{
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 10px!important;
+  font-weight: 700;
+  line-height: 27px;
+  
+
+}
+.meeting-dest{
+  padding-left: 15px;
+}
+.meeting-dest p{
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+ 
+}
+.meeting-fluid{
+  padding:150px 15px 300px 15px ;
+}
+.ourteam{
+margin-top: 100px;
+}
+ .teamheaderimg img{
+width: 100%;
+height: 300px;
+}
+.ourteam h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.ourteam p{
+  font-size: 14px;
+  line-height: 21px;
+  color:#808080 ;
+}
+.team-desc{
+  padding: 34px 0;
+}
+/**************people page element end*************/
+.people{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.peoplebox-img img{
+width:100% ;
+height: 220px;
+}
+.peoplebox-body{
+  padding: 20px 0;
+}
+.peoplebox-body h1{
+  color: #000;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.peoplebox-body p{
+color: #000;
+font-size: 12px;
+font-weight: 600;
+}
